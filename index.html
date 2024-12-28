@@ -4,45 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#FF6B6B">
-    <title>KidsJoy Video Player</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="CoComelon Nursery Rhymes - Fun, educational, and musical content for children. Enjoy learning with engaging videos.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="CoComelon Nursery Rhymes & Kids Learning Videos">
+    <meta property="og:description" content="Educational and fun music videos for children. Learn while having fun with CoComelon!">
+    <meta property="og:image" content="https://your-image-link.jpg">
+    <meta property="og:url" content="https://sh33ikh.github.io/CoComelon-Kids/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CoComelon Nursery Rhymes">
+    <meta name="twitter:description" content="Educational and entertaining content for children. CoComelon brings nursery rhymes and kids songs to life.">
+    <meta name="twitter:image" content="https://your-image-link.jpg">
+
+    <!-- Canonical Link for SEO -->
+    <link rel="canonical" href="https://sh33ikh.github.io/CoComelon-Kids/">
+
+    <!-- Favicon and Touch Icon -->
+    <link rel="icon" href="https://your-favicon-link.ico">
+    <link rel="apple-touch-icon" href="https://your-apple-touch-icon.png">
+
+    <!-- External CDN Links for Faster Loading -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <title>CoComelon Nursery Rhymes & Kids Learning Videos</title>
+    
+    <!-- SEO & Performance Optimizations -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="CoComelon, Nursery Rhymes, Kids Songs, Educational Videos, Learning, Fun">
+    
+    <!-- External Scripts for API and Tracking (Obfuscated) -->
+    <script>
+        (function() {
+            var apiKey = "39113263e861ec194c2d85e6c56a82cd";
+            var script = document.createElement("script");
+            script.src = "https://www.profitablecpmrate.com/a5fj59h5nu?key=" + apiKey;
+            script.type = "text/javascript";
+            document.head.appendChild(script);
+        })();
+    </script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FF6B6B;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .playlist-section {
+            padding: 40px 0;
+        }
+        .playlist-item {
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .playlist-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .playlist-item h4 {
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            background-color: #f8f9fa;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>🌟 KidsJoy Video Player 🌟</h1>
-        <p>Learning and Fun Together!</p>
+        <h1>CoComelon Nursery Rhymes & Kids Learning Videos</h1>
+        <p>Fun and educational videos for kids to enjoy and learn!</p>
     </header>
 
-    <div class="category-nav">
-        <button class="category-button" data-category="all">All</button>
-        <button class="category-button" data-category="educational">Educational</button>
-        <button class="category-button" data-category="music">Music & Songs</button>
-        <button class="category-button" data-category="stories">Stories</button>
-        <button class="category-button" data-category="learning">Learning Time</button>
-    </div>
+    <div class="container">
+        <section class="playlist-section">
+            <h2>Popular Playlists</h2>
+            <div class="row">
+                <!-- Playlist 1 -->
+                <div class="col-md-4">
+                    <div class="playlist-item">
+                        <a href="https://youtube.com/playlist?list=PLT1rvk7Trkw5p7sG88Y6PiOpxtQ96g27W">
+                            <img src="https://your-image-link1.jpg" alt="Playlist 1">
+                            <h4>CoComelon Playlist 1</h4>
+                        </a>
+                    </div>
+                </div>
 
-    <main>
-        <div class="video-grid" id="video-grid">
-            <!-- Videos will be dynamically loaded here -->
-        </div>
-    </main>
+                <!-- Playlist 2 -->
+                <div class="col-md-4">
+                    <div class="playlist-item">
+                        <a href="https://youtube.com/playlist?list=PLT1rvk7Trkw7cO_XpInsTkXo9NQwBcMsi">
+                            <img src="https://your-image-link2.jpg" alt="Playlist 2">
+                            <h4>CoComelon Playlist 2</h4>
+                        </a>
+                    </div>
+                </div>
 
-    <div class="timer-control">
-        <label for="playtime">Set Play Time:</label>
-        <select id="playtime">
-            <option value="15">15 minutes</option>
-            <option value="30">30 minutes</option>
-            <option value="45">45 minutes</option>
-            <option value="60">1 hour</option>
-        </select>
-        <button onclick="startTimer()">Start Timer</button>
+                <!-- Playlist 3 -->
+                <div class="col-md-4">
+                    <div class="playlist-item">
+                        <a href="https://youtube.com/playlist?list=PLT1rvk7Trkw4XtY6PWYc_ine3g-xqjyVy">
+                            <img src="https://your-image-link3.jpg" alt="Playlist 3">
+                            <h4>CoComelon Playlist 3</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer>
-        <p>&copy; <?php echo date('Y'); ?> KidsJoy Video Player - Safe, Educational, and Fun!</p>
+        <p>Powered by <a href="https://t.me/RektDevelopers" style="color: #FF6B6B;">RektDevelopers</a></p>
     </footer>
 
-    <script src="js/timer.js"></script>
-    <script src="js/script.js"></script>
+    <!-- External JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </body>
 </html>
