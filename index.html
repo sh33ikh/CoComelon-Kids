@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FF6B6B">
+    <title>KidsJoy Video Player</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>🌟 KidsJoy Video Player 🌟</h1>
+        <p>Learning and Fun Together!</p>
+    </header>
+
+    <div class="category-nav">
+        <button class="category-button" data-category="all">All</button>
+        <button class="category-button" data-category="educational">Educational</button>
+        <button class="category-button" data-category="music">Music & Songs</button>
+        <button class="category-button" data-category="stories">Stories</button>
+        <button class="category-button" data-category="learning">Learning Time</button>
+    </div>
+
+    <main>
+        <div class="video-grid" id="video-grid">
+            <!-- Videos will be dynamically loaded here -->
+        </div>
+    </main>
+
+    <div class="timer-control">
+        <label for="playtime">Set Play Time:</label>
+        <select id="playtime">
+            <option value="15">15 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="45">45 minutes</option>
+            <option value="60">1 hour</option>
+        </select>
+        <button onclick="startTimer()">Start Timer</button>
+    </div>
+
+    <footer>
+        <p>&copy; <?php echo date('Y'); ?> KidsJoy Video Player - Safe, Educational, and Fun!</p>
+    </footer>
+
+    <script src="js/timer.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
